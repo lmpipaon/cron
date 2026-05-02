@@ -25,6 +25,7 @@ jobs:
 
       - name: Ejecutar mi script
         env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
           # Estas variables de entorno DEBEN coincidir con os.getenv en tu Python
           WRITE_KEY: ${{ secrets.THINGSPEAK_KEY }}
           MY_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
