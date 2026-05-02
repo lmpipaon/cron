@@ -26,4 +26,4 @@ jobs:
         env:
           # Aquí pasamos la API KEY de forma segura
           THINGSPEAK_KEY: ${{ secrets.THINGSPEAK_KEY }}
-        run: python mi_script.py
+        run: python euskalmet_collector.py
