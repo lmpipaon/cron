@@ -77,7 +77,7 @@ def main():
             nivel = float(values[i])
             caudal = round(1.85 * (nivel ** 1.6), 3)
             
-            print(f"\n📍 ESTACIÓN ALEGRÍA (C056)")
+            print(f"\nESTACIÓN ALEGRÍA (C056)")
             print(f"ÚLTIMA VÁLIDA (LOCAL): {hora_local}")
             print(f"NIVEL:  {nivel:.2f} m")
             print(f"CAUDAL: {caudal:.3f} m³/s")
