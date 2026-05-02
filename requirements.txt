@@ -1,3 +1,4 @@
 PyJWT
 requests
 pytz
+cryptography
