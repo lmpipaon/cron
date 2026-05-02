@@ -6,7 +6,10 @@ import pytz
 
 warnings.simplefilter("ignore")
 
-WRITE_APY_KEY_Thingspeak="GKIUIBEY6P95P7U7"
+WRITE_APY_KEY_Thingspeak=os.getenv('WRITE_KEY')
+
+PRIVATE_KEY = os.getenv('MY_PRIVATE_KEY')
+
 
 PRIVATE_KEY = """-----BEGIN PRIVATE KEY-----
 MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCWNlPFKrxpjVP5
