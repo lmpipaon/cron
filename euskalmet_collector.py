@@ -10,36 +10,6 @@ WRITE_APY_KEY_Thingspeak=os.getenv('WRITE_KEY')
 
 PRIVATE_KEY = os.getenv('MY_PRIVATE_KEY')
 
-
-PRIVATE_KEY = """-----BEGIN PRIVATE KEY-----
-MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCWNlPFKrxpjVP5
-x0nTsb/jRdV4/VFIoqYuO3evdDunwFc9r0RkzDqv2KAvJNLPLbbeLhxWe3asTWwK
-3LBPhsO7zZc0KPIXMB1uZcragNTM1HlmAH/2ADBIgeG6YRqJ2yrZrNACZOFeEogV
-s8d4186hEIvy6L9hfgz4+vLcIi4Xhi2RbbkDcRPUojDEyOAmVBeCZawRO4K3GxkF
-IIUjqwwg8anJI6G9tPu9+qjANv9WhBsZP0odRUlZdaAPklrmbt0umh97MthGhRec
-VXTas0AK2OIUv/qYbpkMgQ+cj3tKk3snzMb/p8r2sO04jQNWMgIyb8nLCgvyGbjz
-aTfOlDXRAgMBAAECggEAQHFGNwxCkLYFFN+emKdlP0eycZmbyaGd0a/JhQhEn48w
-3lHW8bd8Zfx1nEQb/K4MCf2WQrPtEbaVZ4OOUE/soSFugP4f/jqyJa6d/GfQ4580
-BcKpIwypqjGueZs3G3VfSMuO4bgNx6IDp+vc48cR6p+Cqs+Xa2f8gMSIdFBlnclW
-Fx2OgPEsh8S+sRHlEM6Cbh9EaFli1Iso+Ck+2AoBtANzi1qr6gV6sOg/PaXIgNSf
-HIvwZRqjRZ1YqEFkB6QKlBXhZoxc0Sanm8NB5zSKxqVM7wCrgwJkfoOs7kbFcGMa
-LqQqdZq0u23yi46bsnSGcB+3N/OWInYdoRzCrDK/0QKBgQC3TTNoeMwvisiD76CX
-inpimNKs5tyIuhBDUEicBnmpmPNX+RHg496wubYR5iFsW6kzscIbhizZtGwJdzrr
-fwPktgtNxfxoIcSd182Od0wx8LjTI8X2ko8YcbrafEWwzH1ZJOo5kRSFYTyiM0CI
-JY1SadyOOCzN5XIDnmhh6Sj6TwKBgQDRyYe63eeHJw6bss60wNI2BHk5cR6qUbOz
-/Lemq9gs1DYMCrkAzJE7ssS3I8DzGzkD394WpwUhOpxqSwnbWFbPUIcMTfsUDwN7
-h8FbPUjO2NKPLN+yevKgrs3TEHKxn/0yo7uuhafBW5gTky7E0pp7E7o+vsxcVSqH
-tEH1GY9l3wKBgBbMNEOfGo4jLbMzH38ZiwUuSq2UfQNIWPN2TcGSEJmmW0Wqxa15
-yd2jC2EIhUmr0MyMJD82Hefpx7IZsStO/dX5SkifAjiVUpXrHDbG4aQoc2RXQ6za
-J4/7vSilYimOFVz7+WG1iJ7aLCdkRndobD4+yl6p3/Cvw9FtZ0AeNqmDAoGBAIi7
-nK6sEUqipz/N5DIldx1j/wr0crM5+zF1ptGIMabOTce9eWVO794EH3jqYclR1fBz
-ihIjnBFTXT1eWTdQtYv8BXl8nggt3Ow3yEvKftjqsxpEeiyfO+KE7HwDvW2ORH4r
-/5i5XmSFaXJgvNvmFG/hpMNeol4P2F+ImnDAzxjrAoGAT2Zp49C9MzTs01Z9FfOV
-ser1koLRNHJMFV0QpRGQQb0CBEnJRcuE+PSZ/YP7JruRpRku3Icg/E0MJfeaEAnI
-W7wjXDDso668ktwACXKNo43Tz9Fhkn1iPWRCh7SSMD42b3pXodR6fq9jje6HUKdR
-j6PB5tLx6T+TsNUoeRgGy6Y=
------END PRIVATE KEY-----"""
-
 def _create_token():
     now = int(dt.datetime.now(dt.timezone.utc).timestamp())
     payload = {"aud": "met01.apikey", "iss": "AMVISA_APP", "exp": now + 3600, "version": "1.0.0", "iat": now - 30, "email": "lpipaon@amvisa.onl"}
