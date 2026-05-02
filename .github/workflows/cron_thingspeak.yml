@@ -25,5 +25,6 @@ jobs:
       - name: Ejecutar script de Python
         env:
           # Aquí pasamos la API KEY de forma segura
-          THINGSPEAK_KEY: ${{ secrets.THINGSPEAK_KEY }}
+          WRITE_KEY: ${{ secrets.THINGSPEAK_KEY }}
+          MY_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
         run: python euskalmet_collector.py
